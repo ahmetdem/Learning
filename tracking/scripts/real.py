@@ -13,8 +13,8 @@ while(1):
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
  
     # define range of red color in HSV
-    lower_red = np.array([160,50,50])
-    upper_red = np.array([180,255,255])  
+    lower_red = np.array([0,0,0])
+    upper_red = np.array([20,20,20])  
  
     #Threshold the HSV image to get only red colors
     mask = cv2.inRange(hsv, lower_red, upper_red)

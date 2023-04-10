@@ -5,7 +5,7 @@ from pytesseract import pytesseract
 path_to_tesseract = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 #Define path to image
-path_to_image = r'images\text.png'
+path_to_image = r'images\name.jpg'
 
 #Point tessaract_cmd to tessaract.exe
 pytesseract.tesseract_cmd = path_to_tesseract
@@ -15,6 +15,8 @@ img = Image.open(path_to_image)
 
 #Extract text from image
 text = pytesseract.image_to_string(img)
+
+print(text)
 
 with open('text.txt', 'w') as txt:
     txt.write(text)
