@@ -45,7 +45,7 @@ btn_open = tk.Button(frm_buttons, text="Open", command=open_file, fg="white", bg
 btn_save = tk.Button(frm_buttons, text="Save As...", command=save_file,  fg="white", bg="black")
 
 btn_open.grid(row=0, column=0, sticky="ew", padx=5, pady=5)
-btn_save.grid(row=1, column=0, sticky="ew", padx=5)
+btn_save.grid(row=1, column=0, sticky="ew", padx=5, pady=5)
 
 frm_buttons.grid(row=0, column=0, sticky="ns")
 txt_edit.grid(row=0, column=1, sticky="nsew")
